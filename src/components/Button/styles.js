@@ -20,7 +20,6 @@ export const ButtonForm = styled.button`
 
   &:hover {
     opacity: .8;
-  
   }
   
   &:active {

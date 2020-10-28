@@ -16,7 +16,9 @@ export const Container = styled.div`
   img {
     height: 60px;
     width: 60px;
+
     font-size: 10px;
+    
     padding: 12px 0px;
 
     opacity: .5;
