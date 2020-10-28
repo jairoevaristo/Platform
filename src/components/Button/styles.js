@@ -19,7 +19,8 @@ export const ButtonForm = styled.button`
   transition: transform .2s linear;
 
   &:hover {
-    background: #9147FF;
+    opacity: .8;
+  
   }
   
   &:active {

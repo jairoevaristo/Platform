@@ -23,11 +23,24 @@ export const Text = styled.h1`
     font-size: 80px;
     margin-bottom: 10px;
 
+    letter-spacing: -1px;
+
     color: #f5f5fb;
+
+    img {
+      width: 70px;
+      height: 70px;
+      
+      margin: 0 15px;
+    }
   }
 
   span {
     font-size: 25px;
+    font-weight: 500;
+
+    line-height: 35px;
+    letter-spacing: -0.4px;
 
     align-self: flex-start;
 

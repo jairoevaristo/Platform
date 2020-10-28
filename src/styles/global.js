@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
 
   body, button, input{
     background-color: #0D0D0F;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 
     border: 0;
     outline: none;
