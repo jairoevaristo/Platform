@@ -49,7 +49,7 @@ function App() {
 
     setTimeout(() => {
       window.location.reload()  
-    }, 1000);
+    }, 2000);
   }
   return (
     <Container>
@@ -106,7 +106,7 @@ function App() {
           <Button name="Entrar" color="#9147FF" functionClick={clickOpen} />
         </Card>
       </motion.div>
-      <ModalActive modal={modal} clickExit={clickExit} active={active}>
+      <ModalActive modal={modal} clickExit={clickExit} active={active} animated='animation_success'>
         Logado com sucesso !
       </ModalActive>
     </Container>

@@ -32,9 +32,9 @@ export const Modal = styled.div`
   align-items: center;
   justify-content: center;
 
-  background-color: #000;
+  background-color: rgba(0, 0, 0, .9);
 
-  border-radius: 15px;
+  border-radius: 10px;
 
   display: ${({ active }) => (active ? 'flex' : 'none' )};
 
@@ -42,6 +42,8 @@ export const Modal = styled.div`
 
   h1 {
     font-size: 36px;
+
+    margin-bottom: 12px;
   }
 `;
 

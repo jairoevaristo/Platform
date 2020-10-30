@@ -3,13 +3,13 @@ import Lottie from 'react-lottie';
 
 import { WrapperModal, Modal } from './styles';
 
-import animationData from '../../utils/animation.json';
-
-function ModalActive({ active, children, clickExit, modal }) {
+function ModalActive({ active, children, clickExit, modal, animated }) {
   const [animation, setAnimation] = useState({
     isStopped: false,
     isPaused: false,
   });
+
+  const animationData = require(`../../utils/${animated}.json`);
   
   const defaultOptions = {
     loop: false,
