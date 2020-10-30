@@ -49,7 +49,7 @@ export const Text = styled.h1`
 
 `;
 
-export const Card = styled.div`
+export const Card = styled.form`
   height: 500px;
   width: 500px;
 
@@ -65,7 +65,7 @@ export const Card = styled.div`
 
   h1 {
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     color: #ccc;  
 
@@ -82,4 +82,15 @@ export const WrapperFields = styled.div`
 
   width: 100%;
   height: 230px;
+
+  p {
+    margin-top: 5px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    color: #9147FF;
+
+    opacity: .4;
+  }
 `;

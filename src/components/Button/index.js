@@ -2,9 +2,9 @@ import React from 'react';
 
 import { ButtonForm } from './styles';
 
-function Button({ name, color }) {
+function Button({ name, color, functionClick }) {
   return (
-    <ButtonForm color={color}>{name}</ButtonForm>
+    <ButtonForm type="submit" color={color} onClick={functionClick}>{name}</ButtonForm>
   );
 };
 
