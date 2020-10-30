@@ -8,7 +8,6 @@ function Input({
   type,
   source,
   focus = false,
-  register,
 }) {
   return (
     <Container>
@@ -19,7 +18,6 @@ function Input({
           placeholder={title}
           name={name}
           autoFocus={focus} 
-          ref={register}
         />
     </Container>
   );
