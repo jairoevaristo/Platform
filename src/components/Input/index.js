@@ -7,7 +7,9 @@ function Input({
   title,
   type,
   source,
+  handleChange,
   focus = false,
+  inputRef,
 }) {
   return (
     <Container>
@@ -17,7 +19,9 @@ function Input({
           type={type}
           placeholder={title}
           name={name}
-          autoFocus={focus} 
+          autoFocus={focus}
+          onChange={handleChange}
+          ref={inputRef} 
         />
     </Container>
   );

@@ -1,19 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Lottie from 'react-lottie';
 
 import { WrapperModal, Modal } from './styles';
 
 function ModalActive({ active, children, clickExit, modal, animated }) {
   const [animation, setAnimation] = useState({
-    isStopped: false,
+    isStopped: true,
     isPaused: false,
   });
+
+  useEffect(() => {
+    setAnimation({
+      ...animation,
+      isStopped: false,
+    })
+  }, [animation]);
 
   const animationData = require(`../../utils/${animated}.json`);
   
   const defaultOptions = {
     loop: false,
-    autoplay: false, 
+    autoplay: true, 
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice'
