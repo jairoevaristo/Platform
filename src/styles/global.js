@@ -8,12 +8,19 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body, button, input{
+  body{
     background-color: #0D0D0F;
+  }
+
+  body, button, input {
     font-family: 'Inter', sans-serif;
 
     border: 0;
     outline: none;
+  }
+
+  button, input {
+    background: none;
   }
 `;
 

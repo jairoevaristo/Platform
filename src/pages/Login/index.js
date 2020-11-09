@@ -26,24 +26,37 @@ function App() {
   const [active, setAcitve] = useState(false);
   const [showAnimation, setShowAnimation] = useState();
 
+
+
   const clickOpen = () => {
     setAcitve(true);
     setModal(true);
 
     if (input.email === 'jairo@gmail.com') {
       setShowAnimation(2);
+      
+      setTimeout(() => {
+        history.push('/dashboard'); 
+      }, 2000);
     }
 
-    else if (input.email === undefined) {
+    else if (input.email === undefined || input.email === '') {
        setShowAnimation(0);
+
+       setTimeout(() => {
+        window.location.reload()  
+      }, 2000);
     }  
   
     else {
       setShowAnimation(1);
+
+      setTimeout(() => {
+        window.location.reload()  
+      }, 2000);
     }
-    console.log(showAnimation);
-    console.log(input.email);
-    console.log(showAnimation);
+
+    console.log(input);
   };
 
   function clickExit() {
@@ -63,10 +76,6 @@ function App() {
     data.preventDefault();
 
     clickOpen();
-
-    setTimeout(() => {
-      window.location.reload()  
-    }, 2000);
 
     inputRef.current.focus();
   };
