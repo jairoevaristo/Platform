@@ -9,6 +9,25 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
+export const Wrapper = styled.div`
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+  max-height: 680px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  
+  @media(max-width: 860px) {
+    flex-direction: column;
+    max-width: 100%;
+
+    padding: 0 20px;    
+  }
+`;
+
 export const Text = styled.h1`
   width: 100%;
   max-width: 500px;
@@ -47,6 +66,16 @@ export const Text = styled.h1`
     color: #ccc;  
   }
 
+  @media(max-width: 860px) {
+    margin-bottom: 36px;
+    padding: 0 20px;
+    max-width: 100%;
+
+    span {
+      max-width: 100%;
+    }
+  }
+
 `;
 
 export const Card = styled.form`
@@ -57,7 +86,7 @@ export const Card = styled.form`
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.0);
 
   padding: 0 25px;
 
@@ -70,8 +99,9 @@ export const Card = styled.form`
     color: #ccc;  
 
     font-size: 40px;
-
   }
+
+ 
 `;
 
 export const WrapperFields = styled.div`

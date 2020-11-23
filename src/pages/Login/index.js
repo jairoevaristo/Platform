@@ -6,7 +6,8 @@ import {
   Container,
   Text,
   Card,
-  WrapperFields
+  WrapperFields,
+  Wrapper,
 } from './styles';
 
 import Input from '../../components/Input';
@@ -82,7 +83,8 @@ function App() {
 
   return (
     <Container>
-      <motion.div initial={{
+      <Wrapper>
+       <motion.div initial={{
         opacity: 0,
         y: 100,
        }}
@@ -93,14 +95,15 @@ function App() {
        transition={{
          duration: 1,
        }}
-      >
+      > 
+        
         <Text>
           <h1>Bem-vindo a Platform<img src={Platform} alt="logo" /></h1>
           <span>Venha e veja como estão os usuarios<br/> do seu site, e tenha o controle sobre <br/>seus conteúdos.</span>
         </Text>
-      </motion.div>
+      </motion.div> 
       
-      <motion.div initial={{
+       <motion.div initial={{
         opacity: 0,
         y: -100,
        }}
@@ -135,6 +138,7 @@ function App() {
           </WrapperFields>
           <Button name="Entrar" color="#9147FF" />
         </Card>
+       
       </motion.div>
        
        {showAnimation === 0 && (
@@ -152,6 +156,7 @@ function App() {
             Logado com sucesso !
           </ModalActive>
        )}  
+        </Wrapper>
     </Container>
   );
 }
